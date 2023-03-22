@@ -1,0 +1,210 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  background-color: rgb(10 , 10, 10);
+  color: white;
+}
+
+/*******************  Logo  *********************/
+.image-cover{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.image{
+  margin-top: 30px;
+  width: 100px;
+  height: 70px;
+  background-image:url('logo.png');
+  background-size: cover;
+}
+
+/*******************  Navbar  *********************/
+
+.navbar{
+  display:flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.nav-item{
+  text-decoration: none;
+  font-size: 20px;
+  border: solid 1px rgb(10 , 10, 10);
+  padding: 10px;
+  color: white;
+}
+
+.nav-item{
+  cursor: pointer;
+}
+
+.active{
+  border-bottom: solid 1px white;
+}
+
+.invalid{
+  border: solid 1px tomato !important;
+}
+
+/*******************  Create Trade  *********************/
+.create-trade{
+  text-align: center;
+}
+
+.create-trade div{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.create-trade  div > *{
+  margin-top: 20px !important;
+}
+
+.select-box{
+  padding: 10px 40px;
+  background-color: rgb(10 , 10, 10);
+  color: white;
+  border: solid 1px white;
+  border-radius: 10px;
+  width: 225px;
+}
+
+.next-btn{
+  padding: 10px 40px;
+  background-color: rgb(10 , 10, 10);
+  color: white;
+  border: solid 1px white;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.next-btn:hover{
+  cursor: pointer;
+}
+
+.group{
+  display: flex;
+  flex-direction: row !important;
+}
+
+.group label{
+  margin-right: 20px;
+}
+
+.choose-trade{
+  flex-direction: row !important;
+  justify-content: space-around;
+}
+
+.trading-buttons{
+  flex: 1;
+  flex-direction: column !important;
+  margin-right: 100px;
+}
+
+.trading-view{
+  flex: 3;
+}
+
+/*******************  Loader  *********************/
+.loader, .loader:before, .loader:after {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  animation-fill-mode: both;
+  animation: bblFadInOut 1.8s infinite ease-in-out;
+}
+.loader {
+  color: #FFF;
+  font-size: 7px;
+  position: relative;
+  text-indent: -9999em;
+  transform: translateZ(0);
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+.loader:before {
+  left: -3.5em;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 3.5em;
+}
+
+@keyframes bblFadInOut {
+  0%, 80%, 100% { box-shadow: 0 2.5em 0 -1.3em }
+  40% { box-shadow: 0 2.5em 0 0 }
+}
+
+/*******************  Auth Pages  *********************/
+.login-container, .signup-container, .verify, .apiinfo-container {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.login-form, .signup-form, .verify-form, .apiinfo-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form *, .signup-form *, .verify-form *, .apiinfo-form * {
+  margin-top: 30px;
+}
+
+.login-btn, .signup-btn, .code-btn {
+  border: none;
+  padding: 10px 40px;
+}
+
+.auth-etc a, p a {
+  color: white;
+}
+
+/**************** Log ****************/
+.log-table{
+  text-align: center;
+  font-size: 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.log-table-label{
+  font-size: 25px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+}
+td{
+  padding: 10px;
+}
+
+tr:hover{
+  background-color: rgb(20 , 20, 20);
+}
+
+.close-btn{
+  padding: 10px 40px;
+  background-color: rgb(10 , 10, 10);
+  color: white;
+  border: solid 1px white;
+  border-radius: 10px;
+}
+
+.close-btn:hover{
+  cursor: pointer;
+}
