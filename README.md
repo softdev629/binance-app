@@ -1,4 +1,4 @@
-# Project Name
+# Binance App
 
 > Binance App that can do binance actions using Binance API.
 
